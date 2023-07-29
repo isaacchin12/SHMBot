@@ -25,6 +25,11 @@ class Location:
     def change_battery_count(self,n):
         self.batteries += n
 
+location_map = [
+    ("SHM Room", 10)
+]
+SHM_Room = Location("SHM Room",10)
+
 class Equipment:
     def __init__(self, name, type, location = SHM_Room):
         self.name = name
@@ -45,11 +50,6 @@ equipment_map = {
     "A6400": 4
 }
  
-location_map = [
-    ("SHM Room", 10)
-]
-SHM_Room = Location("SHM Room",10)
-
 A6 = Equipment("A6400", "Camera")
 A7 = Equipment("A7", "Camera")
 
