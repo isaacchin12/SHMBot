@@ -52,7 +52,8 @@ class Equipment:
         self.location = new_loc
 
 equipment_map = {
-    "A6400": 4
+    "A6400": 4,
+    'A7 III':1
 }
  
 A6 = Equipment("A6400", "Camera")
